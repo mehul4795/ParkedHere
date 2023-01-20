@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:gravity">center</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:paddingLeft">@dimen/dialog_btn_padding</item>
+        <item name="android:paddingRight">@dimen/dialog_btn_padding</item>
+
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:paddingLeft">@dimen/dialog_btn_padding</item>
+        <item name="android:paddingRight">@dimen/dialog_btn_padding</item>
+    </style>
+
+    <style name="HelpTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <!-- Bottom Sheet -->
+    <style name="ThemeOverlay.App.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.App.BottomSheet</item>
+    </style>
+
+    <style name="Widget.App.BottomSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearance">@style/TopRoundedCornersShapeAppearance</item>
+    </style>
+
+    <!-- Shape Appearance -->
+    <style name="TopRoundedCornersShapeAppearance">
+        <item name="cornerSizeTopLeft">@dimen/all_corner_radius</item>
+        <item name="cornerSizeTopRight">@dimen/all_corner_radius</item>
+    </style>
+</resources>

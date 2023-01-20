@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Parked Here</string>
+
+    <string translatable="false" name="status_unsupported">The Parked Here app requires ARCore which isn\'t supported by your device.</string>
+    <string translatable="false" name="status_pretracking">Identifying your surroundings...</string>
+    <string translatable="false" name="status_earth_state_error">Error initializing ARCore. Kindly restart the app and try again.</string>
+    <string translatable="false" name="status_localize_hint">Point your camera at buildings, stores, and signs near you.</string>
+    <string translatable="false" name="status_localize_timeout">Error identifying your surroundings. Kindly restart the app and try again.</string>
+    <string translatable="false" name="status_localize_complete">ARCore initialization complete.</string>
+    <string translatable="false" name="status_terrain_anchor">Terrain anchor state: %1$s</string>
+
+    <string translatable="false" name="tap_screen_text">TAP ON SCREEN TO CREATE ANCHOR</string>
+    <string translatable="false" name="switch_terrain_anchor_mode">TERRAIN</string>
+    <string translatable="false" name="button_text_clear_anchors">CLEAR ALL ANCHORS</string>
+    <string translatable="false" name="button_text_set_anchor">SET CAMERA ANCHOR</string>
+
+    <string  name="vps_unavailable_title">VPS not available</string>
+    <!-- VPS unavailable notice message. [CHAR_LIMIT=NONE] -->
+    <string name="vps_unavailable_message">Your current location does not have VPS coverage. Your session will be using your GPS signal only if VPS is not available.</string>
+    <!-- VPS unavailable notice continue. [CHAR_LIMIT=NONE] -->
+    <string name="continue_button">Continue</string>
+
+    <string  name="share_experience_title">AR in the real world</string>
+    <!-- Privacy notice message. [CHAR_LIMIT=NONE] -->
+    <string name="share_experience_message">To power this session, Google will process visual data from your camera.</string>
+    <!-- Privacy notice accept. [CHAR_LIMIT=NONE] -->
+    <string name="agree_to_share">Get started</string>
+    <!-- Privacy notice learn more. [CHAR_LIMIT=NONE] -->
+    <string name="learn_more">Learn more</string>
+    <!-- Geospatial privacy website. [CHAR_LIMIT=NONE] -->
+    <string translatable="false" name="learn_more_url">https://developers.google.com/ar/data-privacy</string>
+    <string name="geospatial_pose_not_tracking">GEOSPATIAL POSE: Not tracking</string>
+    <string translatable="false" name="geospatial_pose">LAT/LNG: %.6f˚, %.6f˚\n\t\t\tACCURACY: %.2fm\nALTITUDE: %.2fm\n\t\t\tACCURACY: %.2fm\nORIENTATION: [%.1f, %.1f, %.1f, %.1f]\n\t\t\tYAW ACCURACY: %.1f˚</string>
+    <plurals name="status_anchors_set">
+        <item quantity="one">%d Anchor set</item>
+        <item quantity="other">%d Anchors set</item>
+    </plurals>
+
+    <plurals name="status_anchors_cleared">
+        <item quantity="one">%d Anchor cleared</item>
+        <item quantity="other">%d Anchors cleared</item>
+    </plurals>
+
+    <string translatable="false" name="terrain_anchor_resource_exhausted">Too many terrain anchors have already been held. Clear all anchors to create new ones.</string>
+    <string translatable="false" name="terrain_anchor_no_result_yet">Still resolving the terrain anchor. Please make sure you\'re in an area that has VPS coverage.</string>
+
+    <string name="privacy_notice_dialog_text_location_permission">The precise location permission is required to accurately show your parking location on the map.</string>
+    <string name="privacy_notice_dialog_text_camera_permission">The camera permission is required to show your parking location in Augmented Reality (AR).</string>
+    <string name="privacy_notice_dialog_text_data_collection">To power this session, visual data from your camera will be processed by Google.</string>
+    <string name="privacy_notice_dialog_btn_get_started">Get Started</string>
+    <string name="privacy_notice_dialog_btn_learn_more">Learn More</string>
+    <string name="vps_availability_dialog_title">VPS not available</string>
+    <string name="vps_availability_dialog_text_desc">Your current location does not have VPS coverage. Your session will be using your GPS signal instead.</string>
+    <string name="vps_availability_dialog_btn_continue">Continue</string>
+    <string name="main_text_help_tooltip">Learn how to mark your Parking Spot here</string>
+    <string name="help_text_title">Usage Instructions</string>
+    <string name="all_text_bullet_point">•</string>
+    <string name="help_instruction_one">Point your phone towards buildings, roads, signs, etc.</string>
+    <string name="help_instruction_two">It’ll take a few seconds for the app to identify your surroundings.</string>
+    <string name="help_instruction_three">Once you start seeing a plane (White Mesh Grid) being rendered on your device screen, you can then place a marker right above your parked car.</string>
+    <string name="help_instruction_Four">The app will remember the precise location where your car was parked.</string>
+    <string name="help_instruction_Five">When you want to find your parked car, the map view will help you navigate closer to your marker.</string>
+    <string name="help_instruction_Six">When you get closer to your marker, you can use the real-time view from your camera to find your marker above your car in Augmented Reality (AR).</string>
+    <string name="help_instruction_Seven">When you want to add a new parking marker, you can use the reset button on the top-right corner to remove the current marker.</string>
+    <string name="reset_parking_text_title">Reset Parking</string>
+    <string name="reset_parking_text_description">Are you sure you want to reset your parking spot on the map? This will remove your current parking marker.</string>
+    <string name="reset_parking_btn_confirm">Confirm</string>
+    <string name="reset_parking_btn_dismiss">Dismiss</string>
+    <string name="main_text_parking_location_marked">Parking Marker set successfully</string>
+</resources>

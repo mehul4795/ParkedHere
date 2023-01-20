@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/help_text_title"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/glStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionOneTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_text_bullet_point"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionOneValue"
+        style="@style/HelpTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/help_instruction_one"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"
+        app:layout_constraintStart_toEndOf="@+id/tvHelpInstructionOneTitle"
+        app:layout_constraintTop_toTopOf="@+id/tvHelpInstructionOneTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionTwoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_text_bullet_point"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpInstructionOneValue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionTwoValue"
+        style="@style/HelpTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/help_instruction_two"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"
+        app:layout_constraintStart_toEndOf="@+id/tvHelpInstructionTwoTitle"
+        app:layout_constraintTop_toTopOf="@id/tvHelpInstructionTwoTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionThreeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_text_bullet_point"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpInstructionTwoValue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionThreeValue"
+        style="@style/HelpTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/help_instruction_three"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"
+        app:layout_constraintStart_toEndOf="@+id/tvHelpInstructionThreeTitle"
+        app:layout_constraintTop_toTopOf="@id/tvHelpInstructionThreeTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionFourTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_text_bullet_point"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpInstructionThreeValue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionFourValue"
+        style="@style/HelpTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/help_instruction_Four"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"
+        app:layout_constraintStart_toEndOf="@+id/tvHelpInstructionFourTitle"
+        app:layout_constraintTop_toTopOf="@id/tvHelpInstructionFourTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionFiveTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_text_bullet_point"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpInstructionFourValue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionFiveValue"
+        style="@style/HelpTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/help_instruction_Five"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"
+        app:layout_constraintStart_toEndOf="@+id/tvHelpInstructionFiveTitle"
+        app:layout_constraintTop_toTopOf="@id/tvHelpInstructionFiveTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionSixTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_text_bullet_point"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpInstructionFiveValue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionSixValue"
+        style="@style/HelpTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/help_instruction_Six"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"
+        app:layout_constraintStart_toEndOf="@+id/tvHelpInstructionSixTitle"
+        app:layout_constraintTop_toTopOf="@id/tvHelpInstructionSixTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionSevenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/all_text_bullet_point"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvHelpInstructionSixValue" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvHelpInstructionSevenValue"
+        style="@style/HelpTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/help_instruction_Seven"
+        app:layout_constraintEnd_toEndOf="@+id/glEnd"
+        app:layout_constraintStart_toEndOf="@+id/tvHelpInstructionSevenTitle"
+        app:layout_constraintTop_toTopOf="@id/tvHelpInstructionSevenTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

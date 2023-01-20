@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="dialog_btn_padding">8dp</dimen>
+    <dimen name="all_corner_radius">12dp</dimen>
+</resources>
