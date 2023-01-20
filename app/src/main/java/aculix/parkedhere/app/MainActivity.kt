@@ -354,12 +354,12 @@ class MainActivity : AppCompatActivity(), SampleRender.Renderer,
             // Virtual object to render (ARCore geospatial)
             val virtualObjectTexture = Texture.createFromAsset(
                 render,
-                "models/parked_car_marker_color.png",
+                "models/location_marker_color.png",
                 Texture.WrapMode.CLAMP_TO_EDGE,
                 Texture.ColorFormat.SRGB
             )
 
-            virtualObjectMesh = Mesh.createFromAsset(render, "models/parked_car_marker.obj")
+            virtualObjectMesh = Mesh.createFromAsset(render, "models/location_marker.obj")
             geospatialAnchorVirtualObjectShader = Shader.createFromAssets(
                 render,
                 "shaders/ar_unlit_object.vert",
@@ -371,7 +371,7 @@ class MainActivity : AppCompatActivity(), SampleRender.Renderer,
             // Virtual object to render (Terrain anchor marker)
             val terrainAnchorVirtualObjectTexture = Texture.createFromAsset(
                 render,
-                "models/parked_car_marker_color.png",
+                "models/location_marker_color.png",
                 Texture.WrapMode.CLAMP_TO_EDGE,
                 Texture.ColorFormat.SRGB
             )
